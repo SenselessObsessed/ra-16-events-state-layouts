@@ -1,4 +1,5 @@
 import ShopCard from './ShopCard';
+import PropTypes from 'prop-types';
 
 function CardsView({ cards }) {
 	return (
@@ -9,5 +10,9 @@ function CardsView({ cards }) {
 		</div>
 	);
 }
+
+CardsView.propTypes = {
+	cards: PropTypes.array.isRequired,
+};
 
 export default CardsView;

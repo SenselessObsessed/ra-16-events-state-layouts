@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import ShopItemModel from '../models/ShopItemModel';
+
 function ShopItem({ item }) {
 	return (
 		<div className='item'>
@@ -9,5 +12,9 @@ function ShopItem({ item }) {
 		</div>
 	);
 }
+
+ShopItem.propTypes = {
+	card: PropTypes.instanceOf(ShopItemModel).isRequired,
+};
 
 export default ShopItem;

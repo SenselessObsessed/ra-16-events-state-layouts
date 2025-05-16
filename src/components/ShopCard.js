@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import ShopCardModel from '../models/ShopCardModel';
+
 function ShopCard({ card }) {
 	return (
 		<div className='card'>
@@ -11,5 +14,9 @@ function ShopCard({ card }) {
 		</div>
 	);
 }
+
+ShopCard.propTypes = {
+	card: PropTypes.instanceOf(ShopCardModel).isRequired,
+};
 
 export default ShopCard;

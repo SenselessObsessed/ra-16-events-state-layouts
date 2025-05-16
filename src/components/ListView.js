@@ -1,4 +1,5 @@
 import ShopItem from './ShopItem';
+import PropTypes from 'prop-types';
 
 function ListView({ items }) {
 	return (
@@ -9,5 +10,9 @@ function ListView({ items }) {
 		</div>
 	);
 }
+
+ListView.propTypes = {
+	items: PropTypes.array.isRequired,
+};
 
 export default ListView;
